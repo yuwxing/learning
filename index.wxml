@@ -1,113 +1,27 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>全息教研室 - 教育教学改革研究</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #2c3e50;
-            text-align: center;
-        }
-        h2 {
-            color: #34495e;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 5px;
-        }
-        p, li {
-            font-size: 16px;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 14px;
-            color: #777;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>全息教研室</h1>
-        <p><strong>当前日期：</strong>2025年2月26日</p>
+<!-- index.wxml -->
+<view class="container">
+  <view class="title">全息教研室</view>
+  <view class="date"><text>当前日期：</text>{{currentDate}}</view>
 
-        <h2>项目概述</h2>
-        <p>全息教研室是中国教育部针对义务教育中学阶段教育教学改革重点目标而设立的一项创新教研活动研究项目。该项目旨在通过整合现代教育技术与教研资源，推动课堂教学模式优化、教师专业发展以及学生综合素养提升，助力建设高质量的教育体系。</p>
+  <view class="section-title">项目概述</view>
+  <view class="content">全息教研室是中国教育部针对义务教育中学阶段教育教学改革重点目标而设立的一项创新教研活动研究项目。</view>
 
-        <h2>背景与目标</h2>
-        <p>根据中国教育部政策文件，义务教育中学教育教学改革的重点目标包括：</p>
-        <ul>
-            <li>深化课程改革，推动学科核心素养融入教学。</li>
-            <li>推广以学生为中心的教学模式，增强课堂互动性与实践性。</li>
-            <li>加强教师培训与教研活动，促进专业化发展。</li>
-            <li>利用信息化技术提升教学效率与个性化学习体验。</li>
-            <li>构建多元化、综合性的学生评价机制，减轻学业负担。</li>
-        </ul>
+  <view class="section-title">背景与目标</view>
+  <view class="list">
+    <view class="list-item">深化课程改革，推动学科核心素养融入教学。</view>
+    <view class="list-item">推广以学生为中心的教学模式。</view>
+  </view>
 
-        <h2>项目特色</h2>
-        <ul>
-            <li><strong>全息化资源整合</strong>：汇聚优质课程资源、教学案例与数据分析工具。</li>
-            <li><strong>跨学科协作</strong>：鼓励跨学科教师团队合作，设计创新教学方案。</li>
-            <li><strong>实时反馈机制</strong>：利用智能技术记录课堂数据，为教研提供科学依据。</li>
-            <li><strong>开放性平台</strong>：支持全国中学教师参与，共享成果与经验。</li>
-        </ul>
+  <view class="section-title">参与方式</view>
+  <form class="form" bindsubmit="handleSubmit">
+    <view class="form-label">姓名：</view>
+    <input class="form-input" name="name" placeholder="请输入姓名" />
+    <view class="form-label">邮箱：</view>
+    <input class="form-input" name="email" placeholder="请输入邮箱" />
+    <view class="form-label">留言：</view>
+    <textarea class="form-textarea" name="message" placeholder="请输入留言"></textarea>
+    <button class="form-button" form-type="submit">提交</button>
+  </form>
 
-        <h2>研究内容</h2>
-        <ol>
-            <li><strong>课堂教学模式研究</strong>：探索“全息课堂”设计，研究项目制学习（PBL）应用。</li>
-            <li><strong>教师教研活动创新</strong>：开发培训课程，推动“集体备课+实时研讨”模式。</li>
-            <li><strong>学生发展支持</strong>：研究个性化学习路径，试点综合素质评价工具。</li>
-            <li><strong>技术支持体系</strong>：搭建全息教研平台，集成VR、AI等技术。</li>
-        </ol>
-
-        <h2>实施计划</h2>
-        <ul>
-            <li><strong>第一阶段（2025年3月-6月）</strong>：组建团队，开发初步平台。</li>
-            <li><strong>第二阶段（2025年7月-12月）</strong>：试点教研活动，优化教学设计。</li>
-            <li><strong>第三阶段（2026年1月起）</strong>：总结成果，推广模式。</li>
-        </ul>
-
-        <h2>参与方式</h2>
-        <p>教师、学校及技术团队可通过以下方式参与：</p>
-        <ul>
-            <li><strong>教师</strong>：提交教学案例或参与平台测试。</li>
-            <li><strong>学校</strong>：申请试点单位，获取支持。</li>
-            <li><strong>技术团队</strong>：提供平台开发支持。</li>
-        </ul>
-        <p><strong>联系方式：</strong><a href="mailto:holographic_room@moe.edu.cn">holographic_room@moe.edu.cn</a></p>
-
-        <h2>预期成果</h2>
-        <ul>
-            <li>形成教学改革指南。</li>
-            <li>培养骨干教师。</li>
-            <li>提升课堂教学质量。</li>
-        </ul>
-
-        <footer>
-            <p>感谢中国教育部及各合作伙伴的支持！</p>
-        </footer>
-    </div>
-</body>
-</html>
+  <view class="footer">感谢中国教育部及各合作伙伴的支持！</view>
+</view>
